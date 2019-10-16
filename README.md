@@ -1,7 +1,6 @@
-# mySaaSinAWS
-
 # Overview
-This document is a design document for a multi-tenant SAAS application.  
+Design approach for a multi-tenant SAAS application in AWS.  
+
 # Goals
 * Customers can deploy in their own independent environment.
 * Ability for customer to share an environment
