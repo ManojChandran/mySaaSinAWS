@@ -9,7 +9,7 @@ resource "aws_route_table" "tf_public_rt" {
 
   route {
     cidr_block = "0.0.0.0/0"
-    gateway_id = "${var.vpc_igw}"
+    gateway_id = "${var.vpc_igw_id}"
   }
 
   tags {
