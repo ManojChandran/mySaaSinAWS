@@ -3,7 +3,7 @@ variable "aws_region" {}
 
 #-------VPC variables
 variable "vpc_cidr" {}
-variable "public_cidrs" {
+variable "vpc_public_cidrs" {
   type = "list"
 }
 
