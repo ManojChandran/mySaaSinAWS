@@ -14,6 +14,6 @@ module "mySubnet" {
   source       = "./modules/mySubnet"
   vpc_id       = "${module.vpc_igw.vpc_id}"
   vpc_igw_id   = "${module.vpc_igw.igw_id}"
-  vpc_route_table_id   = "${module.vpc_igw.vpc_route_table_id}"
-  public_cidrs = "${var.public_cidrs}"
+  vpc_route_table_id   = "${module.vpc_igw.route_table_id}"
+#  public_cidrs = "${var.public_cidrs}"
 }

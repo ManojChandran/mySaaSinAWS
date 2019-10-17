@@ -29,7 +29,7 @@ resource "aws_default_route_table" "tf_private_rt" {
 # creating public subnet
 resource "aws_subnet" "tf_public_subnet" {
   count                   = 2
-  vpc_id                  = "${aws_vpc.tf_vpc.id}"
+  vpc_id                  = "${var.vpc_id}"
   cidr_block              = "${var.public_cidrs[count.index]}"
   map_public_ip_on_launch = true
   availability_zone       = "${data.aws_availability_zones.available.names[count.index]}"
@@ -39,8 +39,8 @@ resource "aws_subnet" "tf_public_subnet" {
   }
 }
 
-resource "aws_route_table_association" "tf_public_assoc" {
-  count          = "${aws_subnet.tf_public_subnet.count}"
-  subnet_id      = "${aws_subnet.tf_public_subnet.*.id[count.index]}"
-  route_table_id = "${aws_route_table.tf_public_rt.id}"
-}
+#resource "aws_route_table_association" "tf_public_assoc" {
+#  count          = "${aws_subnet.tf_public_subnet.count}"
+#  subnet_id      = "${aws_subnet.tf_public_subnet.*.id[count.index]}"
+#  route_table_id = "${aws_route_table.tf_public_rt.id}"
+#}
