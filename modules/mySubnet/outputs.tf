@@ -6,3 +6,9 @@ output "vpc_public_route_table" {
 output "vpc_private_route_table" {
   value = "${aws_default_route_table.tf_private_rt.id}"
 }
+output "vpc_public_subnets" {
+  value = "${aws_subnet.tf_public_subnet.*.id}"
+}
+output "vpc_subnet_ips" {
+  value = "${aws_subnet.tf_public_subnet.*.cidr_block}"
+}
