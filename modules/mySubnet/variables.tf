@@ -6,6 +6,6 @@ variable "vpc_route_table_id" {}
 variable "vpc_public_cidrs" {
   type = "list"
 }
-#variable "vpc_private_cidrs" {
-#  type = "list"
-#}
+variable "vpc_private_cidrs" {
+  type = "list"
+}

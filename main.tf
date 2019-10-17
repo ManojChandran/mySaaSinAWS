@@ -16,5 +16,5 @@ module "mySubnet" {
   vpc_igw_id   = "${module.vpc_igw.igw_id}"
   vpc_route_table_id   = "${module.vpc_igw.route_table_id}"
   vpc_public_cidrs     = "${var.vpc_public_cidrs}"
-#  vpc_private_cidrs    = "${var.vpc_private_cidrs}"
+  vpc_private_cidrs    = "${var.vpc_private_cidrs}"
 }

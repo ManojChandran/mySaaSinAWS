@@ -6,9 +6,9 @@ variable "vpc_cidr" {}
 variable "vpc_public_cidrs" {
   type = "list"
 }
-#variable "vpc_private_cidrs" {
-#  type = "list"
-#}
+variable "vpc_private_cidrs" {
+  type = "list"
+}
 
 #-------VPC initial values set
 variable "vpc_id" {
