@@ -50,6 +50,9 @@ Authentication and Authorization
 
 ### Network Diagram/ Design
 
+![Alt text](./design.png?raw=true "Title")
+![Alt text](./Auth.png?raw=true "Title")
+
 ### Configuration management
 
 ### Terraform Scripts
