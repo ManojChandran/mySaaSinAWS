@@ -1,8 +1,8 @@
 #----VPC_IGW/outputs.tf----
 
 
-output "vpc_id" {
-  value = "${aws_vpc.tf_vpc.id}"
+output "vpc_out" {
+  value = "${aws_vpc.tf_vpc}"
 }
 
 output "igw" {

@@ -1,0 +1,1 @@
+#----mySubnet/outputs.tf----

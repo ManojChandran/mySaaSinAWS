@@ -4,7 +4,13 @@ provider "aws" {
 }
 
 # Deploy VPC Resource
-module "networking" {
+module "vpc_igw" {
   source       = "./modules/VPC_IGW"
   vpc_cidr     = "${var.vpc_cidr}"
+}
+
+# Deploy Subnet and Route tables
+module "mySubnet" {
+  source       = "./modules/mySubnet"
+  vpc_out     = "${module.vpc_igw.vpc_out}"
 }

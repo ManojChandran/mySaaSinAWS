@@ -1,5 +1,5 @@
 # Overview
-Design approach for a multi-tenant SAAS application in AWS.  
+Design approach for a multi-tenant SAAS application in AWS. This is based on terraform : 0.11.13 (need upgrade to 12)
 
 # Goals
 Key goals for the design, is to provide
