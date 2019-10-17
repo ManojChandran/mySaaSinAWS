@@ -12,5 +12,5 @@ module "vpc_igw" {
 # Deploy Subnet and Route tables
 module "mySubnet" {
   source       = "./modules/mySubnet"
-  vpc_out     = "${module.vpc_igw.vpc_out}"
+  vpc_out     = "${vpc_igw.vpc_out}"
 }
