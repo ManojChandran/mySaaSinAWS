@@ -50,8 +50,8 @@ Authentication and Authorization
 
 ### Network Diagram/ Design
 
-![Design](./design.png?raw=true "Title")
-![Onboarding Approach](./Auth.png?raw=true "Title")
+![Design](./images/design.png?raw=true "Title")
+![Onboarding Approach](./images/Auth.png?raw=true "Title")
 
 ### Configuration management
 
