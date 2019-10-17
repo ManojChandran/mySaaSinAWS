@@ -18,10 +18,10 @@ resource "aws_route_table" "tf_public_rt" {
 }
 
 # Private Route table
-resource "aws_default_route_table" "tf_private_rt" {
-  default_route_table_id  = "${vpc_out.default_route_table_id}"
-
-  tags {
-    Name = "tf_private"
-  }
-}
+#resource "aws_default_route_table" "tf_private_rt" {
+#  default_route_table_id  = "${vpc_out.default_route_table_id}"
+#
+#  tags {
+#    Name = "tf_private"
+#  }
+#}
