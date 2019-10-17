@@ -12,5 +12,5 @@ module "vpc_igw" {
 # Deploy Subnet and Route tables
 module "mySubnet" {
   source       = "./modules/mySubnet"
-  vpc_id     = "${var.vpc_igw.vpc_id}"
+  vpc_id     = "${module.vpc_igw.vpc_id}"
 }
