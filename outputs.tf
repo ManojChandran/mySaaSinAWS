@@ -7,3 +7,7 @@ output "VPC ID" {
 output "VPC IGW" {
   value = "${module.vpc_igw.igw_id}"
 }
+
+output "VPC IGW" {
+  value = "${module.vpc_igw.route_table_id}"
+}
