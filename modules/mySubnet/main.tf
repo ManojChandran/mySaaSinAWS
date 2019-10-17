@@ -5,7 +5,7 @@ data "aws_availability_zones" "available" {}
 
 # Public Route table
 resource "aws_route_table" "tf_public_rt" {
-  vpc_id = "${var.vpc_out.id}"
+  vpc_id = "${var.vpc_id}"
 
   route {
     cidr_block = "0.0.0.0/0"
