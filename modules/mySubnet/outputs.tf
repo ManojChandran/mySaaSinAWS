@@ -1,1 +1,8 @@
 #----mySubnet/outputs.tf----
+
+output "vpc_public_route_table" {
+  value = "${aws_route_table.tf_public_rt.id}"
+}
+output "vpc_private_route_table" {
+  value = "${aws_default_route_table.tf_private_rt.id}"
+}
