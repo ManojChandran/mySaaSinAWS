@@ -12,6 +12,10 @@ variable "vpc_private_cidrs" {
 variable "vpc_rds_cidrs" {
   type = "list"
 }
+variable "db_instance_class" {}
+variable "dbname" {}
+variable "dbuser" {}
+variable "db_password" {}
 
 #-------VPC initial values set
 variable "vpc_id" {

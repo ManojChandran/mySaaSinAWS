@@ -14,7 +14,7 @@ resource "aws_default_route_table" "tf_private_rt" {
 
 # creating private subnet
 resource "aws_subnet" "tf_private_subnet" {
-  count                   = 2
+  count                   = 1
   vpc_id                  = "${var.vpc_id}"
   cidr_block              = "${var.vpc_private_cidrs[count.index]}"
   map_public_ip_on_launch = false
