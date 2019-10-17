@@ -1,4 +1,4 @@
-#----mySubnet/main.tf----
+#----myPublicSubnet/main.tf----
 
 # get availability zone from specified AWS region
 data "aws_availability_zones" "available" {}

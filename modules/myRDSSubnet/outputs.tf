@@ -1,4 +1,4 @@
-#----myPrivateSubnet/outputs.tf----
+#----myRDSSubnet/outputs.tf----
 #
 #output "vpc_public_subnets" {
 #  value = "${aws_subnet.tf_public_subnet.*.id}"
