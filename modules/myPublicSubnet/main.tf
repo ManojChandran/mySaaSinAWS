@@ -17,15 +17,6 @@ resource "aws_route_table" "tf_public_rt" {
   }
 }
 
-# Private Route table
-#resource "aws_default_route_table" "tf_private_rt" {
-#  default_route_table_id  = "${var.vpc_route_table_id}"
-#
-#  tags {
-#    Name = "tf_private"
-#  }
-#}
-
 # creating public subnet
 resource "aws_subnet" "tf_public_subnet" {
   count                   = 2
