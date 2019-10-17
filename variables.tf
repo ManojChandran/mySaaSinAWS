@@ -3,4 +3,4 @@ variable "aws_region" {}
 
 #-------VPC variables
 variable "vpc_cidr" {}
-variable "vpc_out" {}
+variable "vpc_id" {}
