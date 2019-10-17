@@ -21,6 +21,12 @@ Key steps and consideration in designing are:
 * Billing and tiering
 * Deployment & agility
 
+### AWS proposed design
+
+![Design](./images/design.png?raw=true "Title")</br>
+
+![Onboarding Approach](./images/Auth.png?raw=true "Title")
+
 ### Tenant onboarding
 Authentication and Authorization
 
@@ -50,8 +56,6 @@ Authentication and Authorization
 
 ### Network Diagram/ Design
 
-![Design](./images/design.png?raw=true "Title")
-![Onboarding Approach](./images/Auth.png?raw=true "Title")
 
 ### Configuration management
 
