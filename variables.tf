@@ -3,5 +3,11 @@ variable "aws_region" {}
 
 #-------VPC variables
 variable "vpc_cidr" {}
-variable "vpc_id" {}
-variable "vpc_igw_id" {}
+
+#-------VPC initial values set
+variable "vpc_id" {
+  default = ""
+}
+variable "vpc_igw_id" {
+  default = ""
+}
