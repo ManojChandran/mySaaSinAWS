@@ -1,5 +1,13 @@
 # Overview
-Design approach for a multi-tenant SAAS application in AWS. This is based on terraform : 0.11.13 (need upgrade to 12)
+This repository is an Terraform HCL scripts to create a standard Mutli Tenant SAAS application in AWS. Design follows the guidelines presented by Tod Golding ins AWS reinvent 2018 (ARC418-R1), References are provided at the end of this document.
+
+Currently we have completed
+* S3 hosting
+* Cloudfront distribution
+* VPC
+* Internet gateway
+* Subnet Public and Private, with logic to check availability zone and create subnet as per requirement
+* RDS Instance created ( Workin on the security group to complete its installation)
 
 # Goals
 Key goals for the design, is to provide
@@ -28,15 +36,13 @@ Tenant onboarding is key part in the Multi tenant SAAS application. Find the ref
 
 ### Tenant Isolation
 
-AWS has guidelines on attaining Tenant isolation and they have formulated it in below categories.
+AWS has guidelines on attaining Tenant isolation and they have formulated it in below categories.Link for reference document provided at end of this document.
 
 * Model #1 – Tenant Isolation at the AWS Account Layer
 * Model #2 – Tenant Isolation at the Amazon VPC Layer
 * Model #3 – Tenant Isolation at Amazon VPC Subnet Layer
 * Model #4 – Tenant Isolation at the Container Layer
 * Model #5 – Tenant Isolation at the Application Layer
-
-Link for reference document: https://d0.awsstatic.com/whitepapers/saas-solutions-on-aws-final.pdf
 
 Our approach is to divide the tenants in to multiple tier and use a VPC layer Isolation.
 
@@ -86,3 +92,5 @@ Link 1 : https://oouve.com/</br>
 Link 2 : https://www.terraform.io/docs/providers/aws/index.html</br>
 Link 3 : https://www.terraform.io/docs/providers/aws/r/s3_bucket.html</br>
 Link 4 : https://gist.github.com/nagelflorian/67060ffaf0e8c6016fa1050b6a4e767a</br>
+Link 5 : https://d0.awsstatic.com/whitepapers/saas-solutions-on-aws-final.pdf</br>
+Link 6 : https://www.youtube.com/watch?v=mwQ5lipGTBI&t=781s (Title: AWS re:Invent 2018: [REPEAT 1] Deconstructing SaaS: Deep Dive into Building Multi-Tenant Solutions on AWS (ARC418-R1)</br>
