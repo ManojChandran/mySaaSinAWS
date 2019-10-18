@@ -70,4 +70,7 @@ We assume current tenant fall in three categories as mentioned below.
 
 ### Configuration management
 
-### Terraform Scripts
+# Terraform reference
+
+Link 1 : https://www.terraform.io/docs/providers/aws/index.html
+Link 2 : https://www.terraform.io/docs/providers/aws/r/s3_bucket.html
