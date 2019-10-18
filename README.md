@@ -68,7 +68,6 @@ We assume current tenant fall in three categories as mentioned below.
 
 ### Network Diagram/ Design
 
-
 ### Configuration management
 
 ### Terraform Scripts

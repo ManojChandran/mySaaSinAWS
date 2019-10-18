@@ -14,6 +14,7 @@ module "myPublicSubnet" {
   source       = "./modules/myPublicSubnet"
   vpc_id       = "${module.vpc_igw.vpc_id}"
   vpc_igw_id   = "${module.vpc_igw.igw_id}"
+  vpc_public_subnet_count = "${var.vpc_public_subnet_count}"
   vpc_route_table_id   = "${module.vpc_igw.route_table_id}"
   vpc_public_cidrs     = "${var.vpc_public_cidrs}"
 #  vpc_private_cidrs    = "${var.vpc_private_cidrs}"
@@ -24,6 +25,7 @@ module "myPrivateSubnet" {
   source       = "./modules/myPrivateSubnet"
   vpc_id       = "${module.vpc_igw.vpc_id}"
 #  vpc_igw_id   = "${module.vpc_igw.igw_id}"
+  vpc_private_subnet_count = "${var.vpc_private_subnet_count}"
   vpc_route_table_id   = "${module.vpc_igw.route_table_id}"
   vpc_private_cidrs    = "${var.vpc_private_cidrs}"
 }
@@ -38,12 +40,12 @@ module "myRDSSubnet" {
 }
 
 # Deploy an RDS Instance
-module "myRDSInstance" {
-  source       = "./modules/myRDSInstance"
-  vpc_id       = "${module.vpc_igw.vpc_id}"
-  dbname       = "${var.dbname}"
-  dbuser       = "${var.dbuser}"
-  db_password  = "${var.db_password}"
-  db_instance_class = "${var.db_instance_class}""
-  vpc_RDS_subnetsgroup  = "${module.myRDSSubnet.vpc_RDS_subnetsgroup}"
-}
+# module "myRDSInstance" {
+#   source       = "./modules/myRDSInstance"
+#   vpc_id       = "${module.vpc_igw.vpc_id}"
+#   dbname       = "${var.dbname}"
+#   dbuser       = "${var.dbuser}"
+#   db_password  = "${var.db_password}"
+#   db_instance_class = "${var.db_instance_class}""
+#   vpc_RDS_subnetsgroup  = "${module.myRDSSubnet.vpc_RDS_subnetsgroup}"
+# }
