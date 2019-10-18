@@ -3,6 +3,12 @@ provider "aws" {
   region = "${var.aws_region}"
 }
 
+# Deploy s3 hosting bucket
+module "mys3hosting" {
+  source       = "./modules/mys3hosting"
+  vpc_cidr     = "${var.website_bucket_name}"
+}
+
 # Deploy VPC Resource
 module "vpc_igw" {
   source       = "./modules/VPC_IGW"

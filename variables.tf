@@ -13,6 +13,7 @@ variable "aws_region" {}
 
 #-------VPC variables
 variable "vpc_cidr" {}
+variable website_bucket_name {}
 variable "vpc_public_subnet_count" {}
 variable "vpc_private_subnet_count" {}
 
