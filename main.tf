@@ -6,7 +6,7 @@ provider "aws" {
 # Deploy s3 hosting bucket
 module "mys3hosting" {
   source       = "./modules/mys3hosting"
-  vpc_cidr     = "${var.website_bucket_name}"
+  website_bucket_name  = "${var.website_bucket_name}"
 }
 
 # Deploy VPC Resource
