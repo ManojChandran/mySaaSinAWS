@@ -41,11 +41,11 @@ EOF
 }
 
 # AWS S3 bucket for www-redirect
-#resource "aws_s3_bucket" "tf_s3_host_bucket_redirect" {
-#  bucket = "www.${var.website_bucket_name}"
-#  acl = "public-read"
-#
-#  website {
-#    redirect_all_requests_to = "${var.website_bucket_name}"
-#  }
-#}
+resource "aws_s3_bucket" "tf_s3_host_bucket_redirect" {
+  bucket = "www.${var.website_bucket_name}"
+  acl = "public-read"
+
+  website {
+    redirect_all_requests_to = "${var.website_bucket_name}"
+  }
+}
