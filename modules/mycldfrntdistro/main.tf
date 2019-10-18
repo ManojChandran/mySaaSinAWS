@@ -36,7 +36,8 @@ resource "aws_cloudfront_distribution" "tf_s3_distribution" {
 
   restrictions {
     geo_restriction {
-      restriction_type = "none"
+      restriction_type = "whitelist"
+      locations        = ["US", "CA", "GB", "DE"]
     }
   }
 
