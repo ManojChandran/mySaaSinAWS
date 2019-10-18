@@ -1,0 +1,1 @@
+#----mycldfrntdistro/outputs.tf----

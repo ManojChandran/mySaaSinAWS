@@ -9,6 +9,13 @@ module "mys3hosting" {
   website_bucket_name  = "${var.website_bucket_name}"
 }
 
+# Deploy cloudformation distribution
+module "mycldfrntdistro" {
+  source       = "./modules/mycldfrntdistro"
+  domain_name  = "${var.domain_name}"
+  website_bucket_name  = "${var.website_bucket_name}"
+}
+
 # Deploy VPC Resource
 module "vpc_igw" {
   source       = "./modules/VPC_IGW"
