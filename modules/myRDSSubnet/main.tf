@@ -5,7 +5,7 @@ data "aws_availability_zones" "available" {}
 
 # creating RDS subnet
 resource "aws_subnet" "tf_RDS_subnet" {
-  count                   = 1
+  count                   = 2
   vpc_id                  = "${var.vpc_id}"
   cidr_block              = "${var.vpc_rds_cidrs[count.index]}"
   map_public_ip_on_launch = false
