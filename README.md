@@ -59,19 +59,30 @@ We assume current tenant fall in three categories as mentioned below.
 
 ### Deployment & agility
 
-### AWS proposed design
+# Proposed solution
+All the components have been created individual Terraform Modules. Assuming Tenant category and applying mapping, we can control the resources creation and allocation.
 
-![Design](./images/design.png?raw=true "Title")</br>
-
+```hcl
+variable "tenantTier" {
+  description = "tenantTier: Tenant1 or Tenant2 or Tenant3 or Tenant4"
+}
+```
+note : This is a rough outline of solution, we are going to follow AWS proposed Mutli-tenant solutions.
+I will be adding more resources and it will be a continuous improvements towards a good solution.
 
 # Deliverables
 
 ### Network Diagram/ Design
 
+![Design](./images/Network_diagram.png?raw=true "Title")</br>
+
 ### Configuration management
+
+Link for cloning the solution (https://github.com/ManojChandran/mySaaSinAWS.git)
 
 # Terraform reference
 
-Link 1 : https://www.terraform.io/docs/providers/aws/index.html</br>
-Link 2 : https://www.terraform.io/docs/providers/aws/r/s3_bucket.html</br>
-Link 3 : https://gist.github.com/nagelflorian/67060ffaf0e8c6016fa1050b6a4e767a</br>
+Link 1 : https://oouve.com/
+Link 2 : https://www.terraform.io/docs/providers/aws/index.html</br>
+Link 3 : https://www.terraform.io/docs/providers/aws/r/s3_bucket.html</br>
+Link 4 : https://gist.github.com/nagelflorian/67060ffaf0e8c6016fa1050b6a4e767a</br>
