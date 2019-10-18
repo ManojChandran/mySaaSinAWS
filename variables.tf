@@ -14,7 +14,6 @@ variable "aws_region" {}
 #-------VPC variables
 variable "vpc_cidr" {}
 variable "website_bucket_name" {}
-variable "hosted_website_bucket_name" {}
 variable "domain_name" {}
 variable "vpc_public_subnet_count" {}
 variable "vpc_private_subnet_count" {}
@@ -34,6 +33,9 @@ variable "vpc_rds_cidrs" {
 #variable "db_password" {}
 
 #-------VPC initial values set
+variable "hosted_website_bucket_name" {
+  default = ""
+}
 variable "vpc_id" {
   default = ""
 }

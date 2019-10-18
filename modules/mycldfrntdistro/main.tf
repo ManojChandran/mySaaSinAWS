@@ -11,7 +11,7 @@ resource "aws_cloudfront_distribution" "tf_s3_distribution" {
   comment             = "Managed by Terraform"
   default_root_object = "index.html"
 
-  aliases = ["${var.domain_name}"]
+  # aliases = ["${var.domain_name}"]
 
   default_cache_behavior {
     allowed_methods  = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
