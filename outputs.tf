@@ -11,3 +11,7 @@ output "VPC IGW" {
 output "VPC Default Routetable" {
   value = "${module.vpc_igw.route_table_id}"
 }
+
+output "S3 bucket name" {
+  value = "${module.mys3hosting.tf_s3_hosted_bucket}"
+}

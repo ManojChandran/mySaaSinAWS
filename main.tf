@@ -9,12 +9,12 @@ module "mys3hosting" {
   website_bucket_name  = "${var.website_bucket_name}"
 }
 
-# Deploy cloudformation distribution
-module "mycldfrntdistro" {
-  source       = "./modules/mycldfrntdistro"
-  domain_name  = "${var.domain_name}"
-  hosted_website_bucket_name  = "${module.mys3hosting.tf_s3_hosted_bucket}"
-}
+## Deploy cloudformation distribution
+#module "mycldfrntdistro" {
+#  source       = "./modules/mycldfrntdistro"
+#  domain_name  = "${var.domain_name}"
+#  hosted_website_bucket_name  = "${module.mys3hosting.tf_s3_hosted_bucket}"
+#}
 
 # Deploy VPC Resource
 module "vpc_igw" {
