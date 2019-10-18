@@ -13,26 +13,8 @@ variable "aws_region" {}
 
 #-------VPC variables
 variable "vpc_cidr" {}
-variable "vpc_public_subnet_count" {
-  type = "map"
-  description = "count for subnets in availability zone"
-  default = { # please provide corresponding subnet cidr's matching to count
-    Tenant1 = 1
-    Tenant2 = 2
-    Tenant3 = 3
-    Tenant4 = 3
-  }
-}
-variable "vpc_private_subnet_count" {
-  type = "map"
-  description = "count for subnets in availability zone"
-  default = { # please provide corresponding subnet cidr's matching to count
-    Tenant1 = 1
-    Tenant2 = 2
-    Tenant3 = 3
-    Tenant4 = 3
-  }
-}
+variable "vpc_public_subnet_count" {}
+variable "vpc_private_subnet_count" {}
 
 variable "vpc_public_cidrs" {
   type = "list"
