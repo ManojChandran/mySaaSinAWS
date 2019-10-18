@@ -72,5 +72,6 @@ We assume current tenant fall in three categories as mentioned below.
 
 # Terraform reference
 
-Link 1 : https://www.terraform.io/docs/providers/aws/index.html
-Link 2 : https://www.terraform.io/docs/providers/aws/r/s3_bucket.html
+Link 1 : https://www.terraform.io/docs/providers/aws/index.html</br>
+Link 2 : https://www.terraform.io/docs/providers/aws/r/s3_bucket.html</br>
+Link 3 : https://gist.github.com/nagelflorian/67060ffaf0e8c6016fa1050b6a4e767a</br>

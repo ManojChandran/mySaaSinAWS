@@ -2,7 +2,7 @@
 
 resource "aws_cloudfront_distribution" "tf_s3_distribution" {
   origin {
-    domain_name = "${var.website_bucket_name.bucket}.s3.amazonaws.com"
+    domain_name = "${var.hosted_website_bucket_name.bucket}.s3.amazonaws.com"
     origin_id   = "mywebsite"
   }
 

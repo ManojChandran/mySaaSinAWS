@@ -1,4 +1,4 @@
 #----mycldfrntdistro/variables.tf----
 
 variable "domain_name" {}
-variable "website_bucket_name" {}
+variable "hosted_website_bucket_name" {}

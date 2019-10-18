@@ -1,3 +1,3 @@
 #----mys3hosting/variables.tf----
 
-variable website_bucket_name {}
+variable "website_bucket_name" {}

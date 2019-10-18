@@ -13,7 +13,7 @@ module "mys3hosting" {
 module "mycldfrntdistro" {
   source       = "./modules/mycldfrntdistro"
   domain_name  = "${var.domain_name}"
-  website_bucket_name  = "${var.website_bucket_name}"
+  hosted_website_bucket_name  = "${module.mys3hosting.tf_s3_hosted_bucket}"
 }
 
 # Deploy VPC Resource
