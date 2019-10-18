@@ -7,7 +7,7 @@ Currently we have completed
 * VPC
 * Internet gateway
 * Subnet Public and Private, with logic to check availability zone and create subnet as per requirement
-* RDS Instance created ( Workin on the security group to complete its installation)
+* RDS Instance created ( Working on the security group to complete its installation)
 
 # Goals
 Key goals for the design, is to provide
